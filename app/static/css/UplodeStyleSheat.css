@@ -1,0 +1,129 @@
+.body{
+    background-color: #202124;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    border: 2px solid rgb(58 70 70);
+    height: 500px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 57px;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 8px 8px 20px 6px black;
+}
+.heading{
+    color: #618183;
+    top: 1px;
+    position: absolute;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+.drop{
+    background-color: aqua;
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 69%;
+    top: 11%;
+    left: 3%;
+    position: absolute;
+}
+.drop:hover{
+    animation: drop 2s infinite;
+}
+@keyframes drop{
+
+    10% {
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+    }
+    20% {
+        border-top-left-radius: 110%;
+        border-top-right-radius: 110%;
+    }
+    40% {
+        border-bottom-right-radius: 60%;
+        border-bottom-left-radius: 60%;
+    }
+    70% {
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+    }
+    80% {
+        border-top-right-radius: 80%;
+        border-top-left-radius: 80%;
+    }
+    90% {
+        border-top-right-radius: 300%;
+        border-top-left-radius: 300%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+    100% {
+        border-top-right-radius: 0%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+
+}
+.btn{
+    position: absolute;
+    top: 110%;
+    padding: 12px;
+    border-radius: 28px;
+    color: wheat;
+    font-family: cursive;
+    left: 33%;
+    width: 36%;
+    background: linear-gradient(45deg, black, transparent);
+}
+.btn:hover{
+    animation: btn 2s infinite;
+}
+@keyframes btn{
+
+    10% {
+        background: linear-gradient(54deg,rgb(243, 138, 156),rgb(0, 247, 255));
+    }
+    20% {
+        border-top-left-radius: 110%;
+        border-top-right-radius: 110%;
+        background: linear-gradient(88deg,rgb(243, 138, 156),rgb(0, 247, 255));
+    }
+    40% {
+        border-bottom-right-radius: 60%;
+        border-bottom-left-radius: 60%;
+    }
+    70% {
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        background: linear-gradient(176deg,rgb(243, 138, 156),rgb(0, 247, 255));
+    }
+    80% {
+        border-top-right-radius: 80%;
+        border-top-left-radius: 80%;
+    }
+    90% {
+        border-top-right-radius: 300%;
+        border-top-left-radius: 300%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        background: linear-gradient(272deg,rgb(243, 138, 156),rgb(0, 247, 255));
+    }
+    100% {
+        background: linear-gradient(303deg,rgb(243, 138, 156),rgb(0, 247, 255));
+    }
+}

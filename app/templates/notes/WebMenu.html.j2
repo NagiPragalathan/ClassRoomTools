@@ -1,0 +1,45 @@
+{% extends 'base.html.j2' %}
+
+{% block link %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/WebsitePage.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/WebMenu.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+{% endblock %}
+
+{% block UploadMenu %}
+    <div class = "body">
+        <div class = "join1">
+                {% for i in range(10) %}
+                        <li class = "item1"><a href="#">example{{i}}</a></li>
+                {% endfor %}
+        </div>
+        <div class="box">
+        <h1 class = "heading"></h1>
+            <ul class = "list">
+                {% for i in range(10) %}
+                    <div class = "join">
+                        <li class = "item"><a href="#">example{{i}}</a></li>
+                    </div>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block CirclerMenu %}
+    <div class="main">
+      <div class = "circuler">
+          <button class = "l1" ><a href="check"><i class="fas fa-info">press</i></a></button>
+          <button class="l2"><i class="fas fa-sign-out-alt">press</i></button>
+          <button class = "l3"><i class="fas fa-sign-out-alt">press</i></button>
+          <button class = "menu_c" onclick="rorait()"><i class="fas fa-sign-out-alt">press</i></button>
+      </div>
+      <div class="phodo"></div>
+    </div>
+{% endblock %}
+
+{% block JS %}
+    <script src="{{url_for('static', filename='js/circlerMenuBarController.js')}}"></script>
+{% endblock %}

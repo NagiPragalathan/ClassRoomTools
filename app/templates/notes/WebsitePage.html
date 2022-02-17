@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/WebsitePage.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+
+    <title>Document</title>
+</head>
+<body onload="btn()">
+
+                            <!-- vertical navication bar -->
+
+    <nav class = "nav_">  
+        <h1 class = "head">classRoom Tool</h1>
+        <ul class="items">
+
+            <hr class="hr">
+                        <!-- iteams -->
+            <li>
+                <a href="#"><i class="fas fa-home">Home</i></a>
+            </li>
+            <li><a href="#">Class room</a></li>
+            <li><a href="#">meet</a></li>
+            <li><a href="#">test</a></li>
+            <li>
+                <i class="fas fa-book"><a href="v_nav_website.html">notes</a></i>
+            </li>
+            <li>
+                <i class="fas fa-wrench"><a href="#">tools</a></i>
+            </li>
+            <li>
+                <i class="fas fa-info"><a href="#">Help</a></i>
+            </li>
+            <div class="end">
+                <li><a href="#">Chatbot</a></li>
+                <li>
+                    <i class="fas fa-sign-out-alt"><a href="#">LogOut</a></i>
+                </li>
+            </div>
+        </ul>
+                        <!-- Animated Button  -->
+    </nav>
+    <div class="p_nav_btn">
+        <button class = "nav-btn" onclick="btn()" >press</button>
+    </div>
+    <!-- website -->
+
+    <div class="website">
+        <h1 class="topic"> 
+            topic of the contant
+        </h1>
+            <div class = "full">
+                <div class = "page">
+                    <div class="page_contant">
+                        <h1>hi</h1>
+                        <p class="para">  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus architecto dicta quia voluptate soluta? Voluptatibus illo debitis beatae adipisci asperiores tempore consectetm veniam accusamus odit repellat qui, labore culpa deleniti repudiandae aliquid iste cum maxime ut quae <similique class="lorem200"></similique></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="main">
+        <div class = "circuler">
+            <button class = "l1" ><a href="check"><i class="fas fa-info">press</i></a></button>
+            <button class="l2"><i class="fas fa-sign-out-alt">press</i></button>
+            <button class = "l3"><i class="fas fa-sign-out-alt">press</i></button>
+            <button class = "menu_c" onclick="rorait()"><i class="fas fa-sign-out-alt">press</i></button>
+        </div>
+        <div class="phodo"></div>
+    </div>
+    
+
+</body>
+
+<script src="{{url_for('static', filename='js/MenuBarController.js')}}"></script>
+<script src="{{url_for('static', filename='js/circlerMenuBarController.js')}}"></script>
+
+
+</html>

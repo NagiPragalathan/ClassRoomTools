@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\css notes\\codes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ClassRoomTools"
+	}
+}

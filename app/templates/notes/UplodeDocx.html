@@ -1,0 +1,23 @@
+{% extends 'base.html.j2' %}
+
+{% block link %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/WebsitePage.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/UplodeStyleSheat.css') }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+{% endblock %}
+
+{% block Upload %}
+    <div class = "body">
+      <div class="box">
+        <h1 class = "heading">Upload new File</h1>
+        <form action="/check" method=post enctype=multipart/form-data class = "form">
+          <div class="drop">
+              <input type=file name=file data-multiple-caption = "{count} files selected" multiple class="choose">
+              <input type=submit value=Upload class="btn">
+          </div>
+        </form>
+      </div>
+    </div>
+{% endblock %}
+
+
